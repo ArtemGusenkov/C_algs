@@ -11,18 +11,18 @@ a⋅b=НОД(a,b)⋅НОК(a,b)
 
 */
 
-int main(){
-    int a,b;
+int main() {
+    int a, b;
     int nod, nok;
     scanf("%d%d", &a, &b);
     int p = a * b;
-    while (a%b !=0){
-        int t = a%b;
+    while (a % b != 0) {
+        int t = a % b;
         a = b;
         b = t;
     }
     nod = b;
-    nok = p/b;
+    nok = p / b;
     printf("НОД: %d\nНОК: %d\n", nod, nok);
     return 0;
 }
