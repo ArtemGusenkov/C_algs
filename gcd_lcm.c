@@ -16,6 +16,11 @@ int main() {
     int nod, nok;
     scanf("%d%d", &a, &b);
     int p = a * b;
+    if (b>a){
+        int t = b;
+        b = a;
+        a = t; 
+    }
     while (a % b != 0) {
         int t = a % b;
         a = b;
